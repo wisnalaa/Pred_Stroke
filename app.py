@@ -87,8 +87,8 @@ if submit_btn and model is not None:
         # Prediksi
         pred_prob = model.predict(data_input)[0]
         
-        # Threshold dari notebook Anda adalah 0.4
-        FINAL_THRESHOLD = 0.4
+        # Threshold dari notebook Anda adalah 0.5
+        FINAL_THRESHOLD = 0.5
         prediction = 1 if pred_prob > FINAL_THRESHOLD else 0
 
         # Tampilkan Hasil
